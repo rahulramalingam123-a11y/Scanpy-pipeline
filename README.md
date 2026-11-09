@@ -13,7 +13,7 @@ I have prepared single-nucleus RNA-seq libraries and analysed the data with Scan
 ## Install
 
 ```bash
-git clone https://github.com/<your-username>/sc-rnaseq-workflow.git
+git clone https://github.com/rahulramalingam123-a11y/sc-rnaseq-workflow.git
 cd sc-rnaseq-workflow
 python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -e ".[dev]" scikit-learn
