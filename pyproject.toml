@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scflow"
+version = "0.1.0"
+description = "A small, transparent single-cell RNA-seq workflow on top of Scanpy: QC, filtering, clustering, markers"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Rahul Ramalingam" }]
+dependencies = ["scanpy>=1.10", "anndata", "numpy", "pandas", "matplotlib", "leidenalg", "igraph"]
+
+[project.optional-dependencies]
+dev = ["pytest", "scikit-learn"]
+
+[project.scripts]
+scflow = "scflow.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
